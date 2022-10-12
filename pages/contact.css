@@ -191,12 +191,15 @@ nav svg {
 
 .cta-main a {
     text-decoration: none;
-    color: var(--main-color);
+    color: black;
 }
 
 .cta-sec {
     background-color: var(--secondary-color);
     color: rgb(255, 255, 255);
+}
+.cta-sec a{
+    color: white;
 }
 
 .hero {
@@ -232,6 +235,20 @@ nav svg {
     /* Footer height */
 }
 
+.adresbox{
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Noto Sans Mono', monospace;
+    background: none;
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.adresbox a{
+color: white;
+}
 .dropbtn {
     padding: 16px;
     font-size: 16px;
