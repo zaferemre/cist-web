@@ -23,7 +23,6 @@ section .container {
 }
 
 .front-page {
-    font-family: 'Noto Sans Mono', monospace;
     min-height: 100vh;
     max-width: 15%;
     color: white;
@@ -206,7 +205,6 @@ section .container .contactform .inputBox input[type="submit"]:hover {
     font-size: 16px;
     border: none;
     text-decoration: none;
-    font-family: 'Noto Sans Mono', monospace;
     background: none;
     color: black;
     transition: 0.6s;
@@ -278,7 +276,6 @@ header {
 }
 
 header .logo {
-    font-family: 'Noto Sans Mono', monospace;
     position: relative;
     font-weight: 800;
     color: #000000;
@@ -307,7 +304,6 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #000000;
-    font-family: 'Noto Sans Mono', monospace;
     font-weight: 400;
     transition: 0.6s;
 }

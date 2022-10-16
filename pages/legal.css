@@ -1,11 +1,14 @@
-                                                         * {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
                                                              margin: 0;
                                                              padding: 0;
                                                              box-sizing: border-box;
+                                                             font-family: 'Poppins', sans-serif;
                                                          }
                                                          
                                                          html {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              overflow-x: hidden;
                                                          }
                                                          
@@ -20,7 +23,7 @@
                                                          }
                                                          
                                                          header .logo {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              position: relative;
                                                              font-weight: 800;
                                                              color: #ffffff;
@@ -48,7 +51,7 @@
                                                              margin: 0 15px;
                                                              text-decoration: none;
                                                              color: #ffffff;
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              font-weight: 400;
                                                              transition: 0.6s;
                                                          }
@@ -77,13 +80,13 @@
                                                          }
                                                          
                                                          h2 {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              font-size: 2.5rem;
                                                              line-height: 125%;
                                                          }
                                                          
                                                          h3 {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              font-size: 1.25rem;
                                                              line-height: 125%;
                                                              max-width: 40%;
@@ -137,7 +140,7 @@
                                                          .logo h1 {
                                                              margin-left: 0.5rem;
                                                              font-size: 1rem;
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              align-items: center;
                                                          }
                                                          
@@ -146,7 +149,7 @@
                                                          }
                                                          
                                                          .front-page {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              margin-top: 50%;
                                                              min-height: 100vh;
                                                              max-width: 90vh;
@@ -154,7 +157,7 @@
                                                          }
                                                          
                                                          .two {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              min-height: 100vh;
                                                              max-width: 100%;
                                                              color: white;
@@ -164,7 +167,7 @@
                                                          }
                                                          
                                                          .three {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              min-height: 100vh;
                                                              max-width: 100%;
                                                              color: white;
@@ -175,12 +178,12 @@
                                                          
                                                          .selling-point {
                                                              margin-top: 25vh;
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              text-align: left;
                                                          }
                                                          
                                                          .selling-point h3 {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                          }
                                                          
                                                          .ctas {
@@ -188,7 +191,7 @@
                                                          }
                                                          
                                                          .ctas button {
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              padding: 0.7rem;
                                                              font-size: 1rem;
                                                              border: none;
@@ -249,7 +252,7 @@
                                                              font-size: 16px;
                                                              border: none;
                                                              text-decoration: none;
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              background: none;
                                                              color: white;
                                                              transition: 0.6s;
@@ -270,7 +273,7 @@
                                                              font-size: 16px;
                                                              border: none;
                                                              text-decoration: none;
-                                                             font-family: 'Noto Sans Mono', monospace;
+                                                             
                                                              background: none;
                                                              color: white;
                                                              transition: 0.6s;
