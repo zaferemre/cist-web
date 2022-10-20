@@ -105,7 +105,7 @@ header ul li a {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  width: 107%;
+  width: 100%;
   background: rgba(0, 0, 0, 0);
 }
 

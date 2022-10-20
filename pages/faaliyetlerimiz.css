@@ -16,7 +16,7 @@ body {
 
 header {
   position: fixed;
-  top: -5vh;
+
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ header ul li a {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  width: 107%;
+  width: 100%;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -149,7 +149,7 @@ nav svg {
 .front-page {
   margin-top: 50%;
   min-height: 100vh;
-  max-width: 90vh;
+  max-width: 100vh;
   color: white;
 }
 
@@ -243,8 +243,8 @@ nav svg {
 /* Dropdown Button */
 
 .dropbtn {
-  padding: 1.5% 16px;
-  font-size: 15px;
+  padding: 1.5% 2vh;
+  font-size: 1rem;
   border: none;
   text-decoration: none;
 
@@ -254,8 +254,8 @@ nav svg {
 }
 
 .dropbtn-title {
-  padding: 7% 16px;
-  font-size: 16px;
+  padding: 7% 6vh;
+  font-size: 1rem;
   border: none;
   text-decoration: none;
 
@@ -274,17 +274,6 @@ nav svg {
   color: black;
 }
 
-.faaliyetbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  text-decoration: none;
-
-  background: none;
-  color: white;
-  transition: 0.6s;
-}
-
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
@@ -298,7 +287,7 @@ nav svg {
 .faaliyetler-content {
   display: block;
   position: absolute;
-  min-width: 600px;
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
@@ -310,7 +299,7 @@ nav svg {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 500px;
+  min-width: 65vh;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   background: rgba(11, 37, 57, 0.6);
   box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
@@ -322,7 +311,7 @@ nav svg {
 .faaliyetler-content {
   display: block;
   position: absolute;
-  min-width: 600px;
+  min-width: 80vh;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   background: rgba(11, 37, 57, 0.4);
   box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
@@ -341,7 +330,7 @@ nav svg {
 
 .dropdown-content a {
   color: white;
-  padding: 9px 16px;
+  padding: 4vh 6vh;
   text-decoration: none;
   display: block;
 }
@@ -372,7 +361,7 @@ nav svg {
 .kurumdropdown-content {
   display: none;
   position: absolute;
-  min-width: 109px;
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -381,7 +370,7 @@ nav svg {
 
 .kurumdropdown-content a {
   color: white;
-  padding: 12px 16px;
+  padding: 5vh 6vh;
   text-decoration: none;
   display: block;
 }
@@ -414,7 +403,7 @@ nav svg {
   color: black;
   position: absolute;
   text-align: justify;
-  min-width: 150%;
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
   background-color: #0b2539;
@@ -435,7 +424,7 @@ nav svg {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 150%;
+  width: 170%;
   height: 100%;
 }
 .faaliyetdropdown-content ul {
