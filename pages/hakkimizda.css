@@ -1,209 +1,188 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: #0f3959;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #0f3959;
 }
 
-html {
-  overflow-x: hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  z-index: 2000;
-}
-header.active {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  z-index: 2000;
-  background-color: #ffffff;
-}
-
-header img {
-  position: relative;
-
-  transition: 0.6s;
-  margin: 0px 9vh;
-}
-
-header.active img {
-  position: relative;
-  color: #0f3959;
-  filter: invert(1);
-  transition: 0.6s;
-  margin: 0px 4vh;
-  z-index: 2000;
+    position: fixed;
+    top: 3.5vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 2000;
 }
 
 header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header ul li {
-  position: relative;
-  list-style: none;
+    position: relative;
+    list-style: none;
 }
 
-header.active ul li a {
-  position: relative;
-  margin: 0 2vh;
-  text-decoration: none;
-  color: #0f3959;
-  font-weight: 400;
-  transition: 0.6s;
-  z-index: 3000;
-}
 header ul li a {
-  position: relative;
-  margin: 0 2vh;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 400;
-  transition: 0.6s;
+    position: relative;
+    margin: 0 2vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    transition: 0.6s;
 }
 
 .banner {
-  position: relative;
-  height: 0vh;
+    position: relative;
+    height: 0vh;
 }
 
 .container {
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
 }
 
 :root {
-  --main-color: #ffffff;
-  --secondary-color: #1b1b1b;
+    --main-color: #ffffff;
+    --secondary-color: #1b1b1b;
 }
 
 section {
-  padding: 5%;
+    scroll-snap-align: start;
+    height: 100%;
 }
 
 h2 {
-  font-size: 2.5rem;
-  line-height: 125%;
+    font-size: 2.5rem;
+    line-height: 125%;
 }
 
 h3 {
-  font-size: 1.25rem;
-  line-height: 125%;
-  max-width: 100%;
-  padding: 3vh;
-  text-align: justify;
-  background: rgba(88, 88, 88, 0.2);
-  box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
-  -webkit-box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
-  -moz-box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
+    font-size: 1.25rem;
+    line-height: 125%;
+    max-width: 100%;
+    padding: 3vh;
+    text-align: justify;
+    background: rgba(88, 88, 88, 0.2);
+    box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
+    -webkit-box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
+    -moz-box-shadow: 0px 0px 57px 15px rgba(35, 35, 35, 0.35);
 }
 
 h4 {
-  font-size: 1rem;
-
-  font-weight: 300;
-
-  padding: 3vh;
-  color: black;
-}
-
-nav {
-  display: fixed;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav svg {
-  cursor: pointer;
-  z-index: 10;
-}
-
-.links {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transform: translateX(100%);
-}
-
-.links a {
-  color: var(--secondary-color);
-  font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 3vh;
+    color: black;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+    display: grid;
+    position: absolute;
+    top: 2vh;
+    left: 10vh;
+    z-index: 2000;
 }
 
 .logo img {
-  width: 6vh;
+    width: 5.5vh;
 }
 
 .hero {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
-.content {
-  background-color: white;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  z-index: 100;
+.front-page {
+    display: grid;
+    place-items: center;
 }
-.content ul {
-  margin-top: 3vh;
-  margin-left: 2vh;
-}
-.front-page h2 {
-  color: white;
-  margin-top: 4vh;
-  margin-left: 2vh;
-}
-.content ul h2 {
-  margin-top: 6vh;
-}
-.content ul h5 {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-right: 2vh;
-}
-.content ul h6 {
-  font-size: 1rem;
-  font-weight: 300;
 
-  margin-right: 2vh;
+.front-page .content {
+    background-color: rgba(255, 255, 255);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.front-page .baslik {
+    padding: 4.5%;
+    margin-bottom: -5vh;
+}
+
+.front-page .baslik h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.front-page .content ul {
+    width: 60%;
+    height: 100%;
+    margin-top: 3vh;
+}
+
+.front-page .content h2 {
+    color: white;
+    margin-top: 4vh;
+}
+
+.front-page .content ul h2 {
+    color: #0f3959;
+    margin-top: 6vh;
+}
+
+.front-page .content ul h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 2vh;
+    text-align: justify;
+}
+
+.ekip {
+    padding: 3%;
+    background-color: #0b2539;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.ekip p {
+    width: 40%;
+    color: rgb(214, 214, 214);
+    text-align: justify;
+}
+
+.ekip ul {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.tab {
+    margin-left: 30px;
 }
