@@ -12,16 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  position: fixed;
-  top: 3.5vh;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  z-index: 2000;
-}
-
 header ul {
   position: relative;
   display: flex;
@@ -48,22 +38,9 @@ header ul li a {
   height: 0vh;
 }
 
-.container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
-}
-
 :root {
   --main-color: #ffffff;
   --secondary-color: #1b1b1b;
-}
-
-section {
-  scroll-snap-align: start;
-  height: 100%;
 }
 
 h2 {
@@ -90,18 +67,6 @@ h4 {
   color: black;
 }
 
-.logo {
-  display: grid;
-  position: absolute;
-  top: 2vh;
-  left: 10vh;
-  z-index: 2000;
-}
-
-.logo img {
-  width: 11vh;
-}
-
 .hero {
   position: fixed;
   left: 0;
@@ -112,36 +77,9 @@ h4 {
   z-index: -1;
 }
 
-.front-page {
-  display: grid;
-  place-items: center;
-}
-
-.front-page .content {
-  background-color: rgba(255, 255, 255);
-  display: grid;
-  place-items: center;
-  z-index: 100;
-  padding-top: 2%;
-  padding-bottom: 5%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.front-page .baslik {
-  padding: 4.5%;
-  margin-bottom: -5vh;
-}
-
 .front-page .baslik h2 {
   color: white;
   font-size: 3rem;
-}
-
-.front-page .content ul {
-  width: 70%;
-  height: 100%;
-  margin-top: 3vh;
 }
 
 .front-page .content h2 {
@@ -152,41 +90,245 @@ h4 {
   color: #0f3959;
 }
 
-.front-page .content ul h5 {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-right: 2vh;
-  text-align: justify;
-}
-
-.ekip {
-  padding: 3%;
-  background-color: #0b2539;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  position: relative;
-  z-index: 100;
-}
-
-.ekip p {
-  width: 40%;
-  color: rgb(214, 214, 214);
-  text-align: justify;
-}
-
-.ekip ul {
-  color: white;
-  font-size: x-large;
-  font-weight: 500;
-}
-
 .tab {
   margin-left: 30px;
 }
-.indicator {
-  margin-top: 8vh;
-  height: 1.5vh;
-  background-color: #0b2539;
-  width: 60%;
+
+@media only screen and (min-device-width: 1000px) {
+  .show-on-mobile {
+    display: none;
+  }
+  header {
+    position: fixed;
+    top: 3.5vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 2000;
+  }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  header ul li a {
+    position: relative;
+    margin: 0 2vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    transition: 0.6s;
+  }
+  .front-page .content ul {
+    width: 70%;
+    height: 100%;
+    margin-top: 3vh;
+  }
+  .front-page {
+    display: grid;
+  }
+  .front-page .content {
+    background-color: rgba(255, 255, 255);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .front-page .baslik {
+    display: grid;
+    place-items: center;
+    padding: 1vh;
+    margin-bottom: -5vh;
+  }
+  .container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .selling-point {
+    margin-top: 35%;
+  }
+  .selling-pointtwo {
+    margin-top: 5%;
+    text-align: left;
+  }
+  .dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: rgba(11, 37, 57, 0.5);
+  }
+  .logo {
+    display: grid;
+    position: absolute;
+    top: 2vh;
+    left: 10vh;
+    z-index: 2000;
+  }
+  .logo img {
+    width: 5.5vh;
+  }
+  section {
+    scroll-snap-align: start;
+    height: 100%;
+  }
+  .front-page .content ul h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .ekip {
+    padding: 3%;
+    background-color: #0b2539;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  .ekip p {
+    width: 40%;
+    color: rgb(214, 214, 214);
+    text-align: justify;
+  }
+  .ekip ul {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-device-width: 1000px) {
+  .show-on-desktop {
+    display: none;
+  }
+  header {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    font-size: 1rem;
+    z-index: 2000;
+  }
+  .logo {
+    display: grid;
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    z-index: 2000;
+  }
+  .logo img {
+    width: 7vh;
+  }
+  .container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .front-page {
+    display: grid;
+  }
+  .front-page .content ul {
+    width: 90%;
+    height: 100%;
+    margin-top: 3vh;
+  }
+  .front-page .content ul h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .front-page .content {
+    background-color: rgba(255, 255, 255);
+    display: grid;
+    place-items: center;
+    z-index: 100;
+  }
+  .front-page .baslik {
+    display: grid;
+    place-items: center;
+    padding: 3%;
+    margin-top: 10vh;
+  }
+  .dropbtn-mobile {
+    background-color: none;
+    color: #0b2539;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown-mobile {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content-mobile a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content-mobile a:hover {
+    background-color: #ddd;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown-mobile:hover .dropdown-content-mobile {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown-mobile:hover .dropbtn-mobile {
+    background-color: #0b2539;
+    color: white;
+  }
+  .indicator {
+    margin-top: 8vh;
+    height: 1.5vh;
+    background-color: #0b2539;
+    width: 60%;
+  }
+  .ekip {
+    background-color: #0b2539;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  .ekip p {
+    width: 90%;
+    color: rgb(214, 214, 214);
+    text-align: justify;
+  }
+  .ekip ul {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 1.5vh;
+  }
 }

@@ -11,16 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  position: fixed;
-  top: 3.5vh;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  z-index: 2000;
-}
-
 header ul {
   position: relative;
   display: flex;
@@ -45,14 +35,6 @@ header ul li a {
 .banner {
   position: relative;
   height: 0vh;
-}
-
-.container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -92,23 +74,6 @@ h4 {
   color: black;
 }
 
-.logo {
-  display: grid;
-  position: absolute;
-  top: 2vh;
-  left: 10vh;
-  z-index: 2000;
-}
-
-.logo img {
-  width: 11vh;
-}
-
-.front-page {
-  height: 100%;
-  color: white;
-}
-
 .two {
   min-height: 100vh;
   max-width: 100%;
@@ -124,15 +89,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.selling-point {
-  margin-top: 12.5%;
-}
-
-.selling-pointtwo {
-  margin-top: 5%;
-  text-align: left;
 }
 
 .selling-point h3 {
@@ -184,17 +140,6 @@ h4 {
   color: var(--secondary-color);
   text-align: center;
   font-family: "argonite", sans-serif;
-}
-
-footer {
-  color: white;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  height: 1.5vh;
-  left: 50%;
-  margin-top: 49.8vh;
-  /* Footer height */
 }
 
 /* Dropdown Button */
@@ -312,4 +257,185 @@ footer {
 .dropdowntwo:hover .dropbtntwo {
   background-color: white;
   color: rgb(66, 66, 66);
+}
+
+@media only screen and (min-device-width: 1000px) {
+  .show-on-mobile {
+    display: none;
+  }
+  header {
+    position: fixed;
+    top: 3.5vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 2000;
+  }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  header ul li a {
+    position: relative;
+    margin: 0 2vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    transition: 0.6s;
+  }
+  .container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .selling-point {
+    margin-top: 35%;
+  }
+  .selling-pointtwo {
+    margin-top: 5%;
+    text-align: left;
+  }
+  .dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: rgba(11, 37, 57, 0.5);
+  }
+  .logo {
+    display: grid;
+    position: absolute;
+    top: 2vh;
+    left: 10vh;
+    z-index: 2000;
+  }
+  .logo img {
+    width: 5.5vh;
+  }
+  .front-page {
+    min-height: 100vh;
+    max-width: 100vh;
+    color: white;
+  }
+  footer {
+    display: grid;
+    place-items: center;
+    height: 1.5vh;
+    left: 50%;
+    margin-top: 49.8vh;
+    /* Footer height */
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-device-width: 1000px) {
+  .show-on-desktop {
+    display: none;
+  }
+  header {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    font-size: 1rem;
+    z-index: 2000;
+  }
+  .logo {
+    display: grid;
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    z-index: 2000;
+  }
+  .logo img {
+    width: 7vh;
+  }
+  .front-page {
+    margin-left: 0vh;
+    min-height: 100vh;
+    max-width: 100vh;
+    color: white;
+  }
+  .container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  .selling-point {
+    margin-top: 70%;
+  }
+  .selling-pointtwo {
+    margin-top: 5%;
+    text-align: left;
+  }
+  .dropdown-contenttwo {
+    display: none;
+    position: absolute;
+    min-width: 250%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: rgba(11, 37, 57, 0.5);
+  }
+  .dropbtn-mobile {
+    background-color: none;
+    color: #0b2539;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown-mobile {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content-mobile a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content-mobile a:hover {
+    background-color: #ddd;
+  }
+  /* Show the dropdown menu on hover */
+  .dropdown-mobile:hover .dropdown-content-mobile {
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown-mobile:hover .dropbtn-mobile {
+    background-color: #0b2539;
+    color: white;
+  }
+  footer {
+    color: white;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    height: 1.5vh;
+    left: 50%;
+    margin-top: 49.8vh;
+    /* Footer height */
+  }
 }
